@@ -35,15 +35,10 @@
 
 ## 🌐 페이지 미리보기
 
-> 👉 로컬에서 확인하려면:    https://zdeik.github.io/mypage/    
-
-```bash
-1. 저장소 클론
-2. index.html 파일을 브라우저에서 열기
-
----
-
-📬 연락
+> 👉 https://zdeik.github.io/mypage/
+>
+> ---
+>
+> 📬 연락
 문의사항이나 피드백이 있다면 언제든지 연락주세요!
 📧 Email: kiedz@naver.com
-
