@@ -2,11 +2,10 @@
 <html lang="ko">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <title>포트폴리오</title>
+    <title>나의 포트폴리오</title>
   </head>
   <body>
-    <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
+    <nav id="sidebar" class="sidebar">
       <h2>
         메뉴 <button class="menu-btn" onclick="toggleSidebar()">☰</button>
       </h2>
@@ -14,97 +13,76 @@
       <a href="#skills">기술 스택</a>
       <a href="#projects">프로젝트</a>
       <a href="#contact">연락처</a>
-    </div>
+    </nav>
 
-    <!-- Header -->
     <header>
       <button class="menu-btn" onclick="toggleSidebar()">☰</button>
-      <h1>나의 포트폴리오</h1>
+      <h1>👨‍💻 나의 포트폴리오</h1>
     </header>
 
-    <!-- Main Content -->
     <main class="container">
       <section class="section" id="about">
         <h2>소개</h2>
-        <p>안녕하세요! 어제보다 나은 코드를 꿈꾸는 개발자입니다.</p>
+        <p>
+          안녕하세요! 문제 해결을 즐기고, 사용자 중심 개발을 지향하는
+          개발자입니다.
+        </p>
       </section>
+
       <section class="section" id="skills">
         <h2>기술 스택</h2>
-        <ul>
-          <li>HTML / CSS / JavaScript /Python</li>
-          <li>React, Node.js</li>
-          <li>PostgreSQL, MongoDB, MySQL</li>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>Python</li>
         </ul>
       </section>
+
       <section class="section" id="projects">
         <h2>프로젝트</h2>
-        <p>다양한 웹 서비스를 제작한 경험이 있습니다.</p>
+        <div class="card">
+          <h3>@@@@@@@@@@@@@@@</h3>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+          delectus dicta blanditiis obcaecati eaque, cum laudantium maxime
+          maiores neque, facere architecto minima molestias nisi, non odit!
+          Tempore ratione alias inventore!
+        </div>
+        <div class="card">
+          <h3>@@@@@@@@@@@@@@</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            quaerat excepturi quod suscipit. Suscipit, autem id excepturi sequi
+            necessitatibus illo veritatis fugit doloremque facere! Laudantium
+            nemo in tempore vel necessitatibus
+          </p>
+        </div>
       </section>
+
       <section class="section" id="contact">
         <h2>연락처</h2>
-        <p>Email: kiedz@naver.com</p>
-      </section>
-      <section class="section" id="skills">
-        <h2>기술 스택</h2>
-        <ul>
-          <li>HTML / CSS / JavaScript /Python</li>
-          <li>React, Node.js</li>
-          <li>PostgreSQL, MongoDB, MySQL</li>
-        </ul>
-      </section>
-      <section class="section" id="projects">
-        <h2>프로젝트</h2>
-        <p>다양한 웹 서비스를 제작한 경험이 있습니다.</p>
-      </section>
-      <section class="section" id="contact">
-        <h2>연락처</h2>
-        <p>Email: kiedz@naver.com</p>
-      </section>
-      <section class="section" id="skills">
-        <h2>기술 스택</h2>
-        <ul>
-          <li>HTML / CSS / JavaScript /Python</li>
-          <li>React, Node.js</li>
-          <li>PostgreSQL, MongoDB, MySQL</li>
-        </ul>
-      </section>
-      <section class="section" id="projects">
-        <h2>프로젝트</h2>
-        <p>다양한 웹 서비스를 제작한 경험이 있습니다.</p>
-      </section>
-      <section class="section" id="contact">
-        <h2>연락처</h2>
-        <p>Email: kiedz@naver.com</p>
-      </section>
-      <section class="section" id="skills">
-        <h2>기술 스택</h2>
-        <ul>
-          <li>HTML / CSS / JavaScript /Python</li>
-          <li>React, Node.js</li>
-          <li>PostgreSQL, MongoDB, MySQL</li>
-        </ul>
-      </section>
-      <section class="section" id="projects">
-        <h2>프로젝트</h2>
-        <p>다양한 웹 서비스를 제작한 경험이 있습니다.</p>
-      </section>
-      <section class="section" id="contact">
-        <h2>연락처</h2>
-        <p>Email: kiedz@naver.com</p>
+        <p>Email: <a href="mailto:kiedz@naver.com">kiedz@naver.com</a></p>
+        <p>
+          GitHub:
+          <a href="https://github.com/zdeik/mypage.git"
+            >github.com/yourprofile</a
+          >
+        </p>
       </section>
     </main>
 
     <footer>
-      <p>
-        2025 나의 포트폴리오
-        <button id="topBtn" onclick="scrollToTop()">🔝</button>
-      </p>
+      <p>2025 나의 포트폴리오</p>
+      <button onclick="scrollToTop()">🔝</button>
     </footer>
 
     <script>
       function toggleSidebar() {
-        const sidebar = document.getElementById('sidebar');
-        sidebar.classList.toggle('open');
+        document.getElementById('sidebar').classList.toggle('open');
       }
 
       function scrollToTop() {
