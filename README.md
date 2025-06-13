@@ -36,7 +36,7 @@
 
 ## 🌐 페이지 미리보기
 
-> 👉 https://zdeik.github.io/mypage/
+> 👉 [https://zdeik.github.io/mypage/](https://zdeik.github.io/webstart/)
 >
 > ---
 >
